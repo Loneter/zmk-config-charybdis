@@ -39,7 +39,6 @@
     &none  &kp Z         &kp X        &kp C       &kp V          &kp B                 &kp N      &kp M       &kp COMMA   &kp DOT      &kp FSLH        &none
                                       &lt BT ESC  &lt LOWER TAB  &kp ENTER             &lt SYSTEM SPACE       &lt RAISE BSPC
             >;
-            trackball-bindings = <&tmv_coarse>;
         };
 
         Lower {
@@ -50,7 +49,6 @@
     &none  &kp GRAVE        &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp SQT   &kp NON_US_HASH   &none
                                     &trans  &trans  &trans            &trans  &trans
             >;
-            trackball-bindings = <&tmv_fine>;
         };
 
         Raise {
@@ -61,7 +59,6 @@
     &none  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &kp F12  &none
                            &trans  &trans  &trans         &trans  &trans
             >;
-            trackball-bindings = <&tmv_fine>;
         };
 
         System {
@@ -72,7 +69,6 @@
    &none  &trans      &trans       &trans     &trans   &trans      &kp C_MUTE  &trans    &trans    &trans        &trans       &none
                                    &trans     &trans   &trans      &trans  &trans
             >;
-            trackball-bindings = <&tmv_fine>;
         };
 
         Bluetooth {
@@ -83,7 +79,6 @@
    &none  &out OUT_TOG  &trans        &trans        &trans        &trans            &trans  &trans  &trans  &trans  &trans  &none
                                       &trans        &trans        &trans            &trans  &trans
             >;
-            trackball-bindings = <&tmv_fine>;
         };
 
         Mouse {
@@ -94,7 +89,6 @@
    &none  &trans  &trans  &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &none
                           &mkp LCLK  &mkp MCLK  &mkp RCLK   &trans  &trans
             >;
-            trackball-bindings = <&tmv_fine>;
         };
 
         Scroll {
@@ -105,7 +99,6 @@
    &none  &trans  &trans  &trans    &trans     &trans      &trans  &trans  &trans  &trans  &trans  &none
                           &trans    &trans     &trans      &trans  &trans
             >;
-            trackball-bindings = <&tmv_fine>;
         };
     };
 };
