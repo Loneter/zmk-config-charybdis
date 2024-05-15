@@ -26,7 +26,20 @@
     quick-tap-ms = <150>;
 };
 
+
+
 / {
+
+  behaviors {
+      lm: layer_mouse {
+          compatible = "zmk,behavior-hold-tap";
+          #binding-cells = <2>;
+          flavor = "balanced";
+          tapping-term-ms = <240>;
+          quick-tap-ms = <150>;
+          bindings = <&mo>, <&mkp>;
+    };
+  };
 
   keymap {
     compatible = "zmk,keymap";
@@ -78,10 +91,10 @@
 
         Mouse {
             bindings = <
-   &none  &trans  &trans  &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &none
-   &none  &trans  &trans  &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &none
-   &none  &trans  &trans  &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &none
-                          &mkp LCLK  &mkp MCLK  &mkp RCLK   &trans  &trans
+   &none  &trans  &trans  &trans     &trans           &trans             &trans  &trans  &trans  &trans  &trans  &none
+   &none  &trans  &trans  &trans     &trans           &trans             &trans  &trans  &trans  &trans  &trans  &none
+   &none  &trans  &trans  &trans     &trans           &trans             &trans  &trans  &trans  &trans  &trans  &none
+                          &mkp LCLK  &lm SCROLL MCLK  &lm SCROLL RCLK    &trans  &trans
             >;
         };
 
